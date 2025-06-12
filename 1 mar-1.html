@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="outer">
+<script>
+var obj=[
+{id:1,pname:"Smart Mobile",price:37000,category:"mobile",pimage:"image/m1.jpg"},
+{id:2,pname:"Smart Mobile",price:32000,category:"mobile",pimage:"image/m2.jpg"},
+{id:3,pname:"Smart Mobile",price:33000,category:"mobile",pimage:"image/m3.jpg"},
+{id:4,pname:"Smart Mobile",price:31000,category:"mobile",pimage:"image/m4.jpg"},
+{id:5,pname:"Shirt",price:1400,category:"shirt",pimage:"image/s1.jpg"},
+{id:6,pname:"Shirt",price:1100,category:"shirt",pimage:"image/s2.jpg"},
+{id:7,pname:"Shirt",price:1200,category:"shirt",pimage:"image/s3.jpg"},
+{id:8,pname:"Shirt",price:800,category:"shirt",pimage:"image/s4.jpg"},
+{id:9,pname:"Smart Watch",price:7400,category:"watch",pimage:"image/w1.jpg"},
+{id:10,pname:"Smart Watch",price:2400,category:"watch",pimage:"image/w2.jpg"},
+{id:11,pname:"Smart Watch",price:3400,category:"watch",pimage:"image/w3.jpg"},
+{id:12,pname:"Smart Watch",price:4400,category:"watch",pimage:"image/w4.jpg"},
+]
+// for(var i=0;i<obj.length;i++){
+// document.write("<div class='product'><img src="+obj[i].pimage+"><h3>Pname="+obj[i].pname+"</h3><p> Price=RS."+obj[i].price+"</p><p>category="+obj[i].category+"</p></div>");
+// }
+
+for(var i=0;i<obj.length;i++){
+document.write(
+    `
+   <div class='product'>
+<img src=${obj[i].pimage}>
+<div class='data'>
+    <h3>PName=${obj[i].pname}</h3>
+    <p>Price=Rs.${obj[i].price}</p>
+    <p>category=${obj[i].category}</p>
+    <button>Add to cart</button>
+    </div>
+    </div>
+    `
+)
+}
